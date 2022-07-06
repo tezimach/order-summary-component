@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  background: hsla(226, 100%, 94%, 1);
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://cdn.glitch.global/3db4f8ef-f848-462a-b38c-c0ea92c1a291/pattern-background-desktop.svg?v=1655895692435);
+  background-repeat: repeat-x;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.order_summary_card {
+  background-color: hsla(0, 0%, 100%, 1);
+  width: 327px;
+  border-radius: 20px;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order_summary_card img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+  text-align: center;
+  margin-top: 45px;
+  color: hsla(223, 46%, 23%, 1);
+  
+}
+
+.main_paragraph {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  margin-left: 8%;
+  margin-top: 17px;
+  margin-bottom: 20px;
+  margin-right: 8%;
+  color: hsla(223, 23%, 55%, 1);
+}
+
+.price_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-bottom: 32px;
+  margin-right: 5%;
+  background-color: hsla(228, 100%, 99%, 1);
+  padding: 5%;
+  border-radius: 11%;
+  width: 79%
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.price_container img {
+  margin-right: 6%;
+}
+
+.anual_plan_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+h2 {
+  margin: 0 auto;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 21px;
+  color: hsla(223, 46%, 23%, 1);
+}
+
+.price {
+  margin: 0 auto;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px; 
+  line-height: 21px;
+  color: hsla(224, 23%, 55%, 1);
+}
+
+.change {
+  all: unset;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  color: hsla(245, 75%, 52%, 1);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.proceed {
+  all: unset;
+  display: flex;
+  background-color: hsla(245, 75%, 52%, 1);
+  border-radius: 11px;
+  justify-content: center;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-left: 19%;
+  padding-right: 19%;
+  margin-bottom: 32px;
+  height: 50px;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.cancel {
+  all: unset;
+  width: 96px;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 20px;
+  color: hsla(224, 23%, 55%, 1);
+  text-align: center;
+  margin-right: 178px;
+  margin-left: 178px;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+.change:hover {
+  text-decoration: none;
+  color: hsla(245, 83%, 68%, 1);
+}
+
+.proceed:hover {
+  background-color: hsla(245, 83%, 68%, 1);
+}
+
+.cancel:hover {
+  color: hsla(223, 47%, 23%, 1);
+}
